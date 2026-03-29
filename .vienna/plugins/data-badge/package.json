@@ -1,5 +1,5 @@
 {
-  "name": "plugin-data_badge",
+  "name": "plugin-data-badge",
   "version": "0.0.1",
   "private": true,
   "description": "Tools for data pipelines and analysis",

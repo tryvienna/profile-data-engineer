@@ -1,4 +1,4 @@
 {
   "version": 1,
-  "defaults": ["linear", "data_badge"]
+  "defaults": ["linear", "data-badge"]
 }
