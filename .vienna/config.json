@@ -1,23 +1,59 @@
 {
   "version": 1,
   "name": "Data Engineer / Data Scientist",
-  "description": "Quick actions and tools for data engineers — SQL generation, dbt models, pipeline debugging, data profiling, and query optimization.",
-  "author": { "name": "Vienna Team", "url": "https://tryvienna.com" },
-  "icon": "📊",
-  "tags": ["data-engineering", "sql", "dbt", "analytics", "data-science", "pipelines"],
+  "description": "Quick actions and tools for data engineers \u2014 SQL generation, dbt models, pipeline debugging, data profiling, and query optimization.",
+  "author": {
+    "name": "Vienna Team",
+    "url": "https://tryvienna.com"
+  },
+  "icon": "\ud83d\udcca",
+  "tags": [
+    "data-engineering",
+    "sql",
+    "dbt",
+    "analytics",
+    "data-science",
+    "pipelines"
+  ],
   "plugins": [
-    { "id": "linear", "requirement": "recommended", "reason": "Track data pipeline tasks and bugs with Linear" },
-    { "id": "profile_badge", "requirement": "recommended", "reason": "Shows the active content profile in the menu bar" }
+    {
+      "id": "linear",
+      "requirement": "recommended",
+      "reason": "Track data pipeline tasks and bugs with Linear"
+    },
+    {
+      "id": "data-badge",
+      "requirement": "recommended",
+      "reason": "Shows profile identity in menu bar"
+    }
   ],
   "skills": [
-    { "id": "data-craft", "requirement": "recommended" }
+    {
+      "id": "data-craft",
+      "requirement": "recommended"
+    }
   ],
   "quickActions": [
-    { "id": "sql-query", "requirement": "recommended" },
-    { "id": "dbt-model", "requirement": "recommended" },
-    { "id": "pipeline-debug", "requirement": "recommended" },
-    { "id": "data-profiling", "requirement": "recommended" },
-    { "id": "query-optimize", "requirement": "recommended" }
+    {
+      "id": "sql-query",
+      "requirement": "recommended"
+    },
+    {
+      "id": "dbt-model",
+      "requirement": "recommended"
+    },
+    {
+      "id": "pipeline-debug",
+      "requirement": "recommended"
+    },
+    {
+      "id": "data-profiling",
+      "requirement": "recommended"
+    },
+    {
+      "id": "query-optimize",
+      "requirement": "recommended"
+    }
   ],
   "registries": [],
   "settings": []
