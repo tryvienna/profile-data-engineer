@@ -1,4 +1,1 @@
-{
-  "version": 1,
-  "defaults": ["linear"]
-}
+{ "version": 1, "defaults": ["linear", "profile_badge"] }

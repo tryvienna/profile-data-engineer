@@ -1,13 +1,13 @@
 [
   {
-    "id": "getting-started",
-    "name": "Getting Started",
-    "description": "Introduction to using Vienna profiles — how to customize and share",
+    "id": "data-craft",
+    "name": "Data Craft",
+    "description": "Data engineering and science — SQL, pipelines, modeling, and data quality",
     "version": "1.0.0",
     "source": "inline",
-    "icon": "👋",
-    "category": "Onboarding",
-    "tags": ["profiles", "onboarding", "getting-started"],
+    "icon": "📊",
+    "category": "Data",
+    "tags": ["data-engineering", "sql", "pipelines", "data-quality"],
     "author": { "name": "Vienna Team" }
   }
 ]

@@ -6,10 +6,11 @@
   "icon": "📊",
   "tags": ["data-engineering", "sql", "dbt", "analytics", "data-science", "pipelines"],
   "plugins": [
-    { "id": "linear", "requirement": "recommended", "reason": "Track data pipeline tasks and bugs with Linear" }
+    { "id": "linear", "requirement": "recommended", "reason": "Track data pipeline tasks and bugs with Linear" },
+    { "id": "profile_badge", "requirement": "recommended", "reason": "Shows the active content profile in the menu bar" }
   ],
   "skills": [
-    { "id": "getting-started", "requirement": "recommended" }
+    { "id": "data-craft", "requirement": "recommended" }
   ],
   "quickActions": [
     { "id": "sql-query", "requirement": "recommended" },
