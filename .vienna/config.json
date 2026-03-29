@@ -22,7 +22,7 @@
       "reason": "Track data pipeline tasks and bugs with Linear"
     },
     {
-      "id": "data-badge",
+      "id": "data_badge",
       "requirement": "recommended",
       "reason": "Shows profile identity in menu bar"
     }

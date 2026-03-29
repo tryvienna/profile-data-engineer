@@ -12,7 +12,7 @@
     "author": { "name": "Drift Team" }
   },
   {
-    "id": "data-badge",
+    "id": "data_badge",
     "name": "Data Engineer / Scientist",
     "description": "Tools for data pipelines and analysis",
     "version": "0.0.1",
