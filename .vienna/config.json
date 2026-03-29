@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "name": "Data Engineer / Data Scientist",
+  "description": "Quick actions and tools for data engineers — SQL generation, dbt models, pipeline debugging, data profiling, and query optimization.",
+  "author": { "name": "Vienna Team", "url": "https://tryvienna.com" },
+  "icon": "📊",
+  "tags": ["data-engineering", "sql", "dbt", "analytics", "data-science", "pipelines"],
+  "plugins": [
+    { "id": "linear", "requirement": "recommended", "reason": "Track data pipeline tasks and bugs with Linear" }
+  ],
+  "skills": [
+    { "id": "getting-started", "requirement": "recommended" }
+  ],
+  "quickActions": [
+    { "id": "sql-query", "requirement": "recommended" },
+    { "id": "dbt-model", "requirement": "recommended" },
+    { "id": "pipeline-debug", "requirement": "recommended" },
+    { "id": "data-profiling", "requirement": "recommended" },
+    { "id": "query-optimize", "requirement": "recommended" }
+  ],
+  "registries": [],
+  "settings": []
+}

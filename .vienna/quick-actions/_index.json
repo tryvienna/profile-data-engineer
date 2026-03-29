@@ -1,0 +1,127 @@
+[
+  {
+    "id": "sql-query",
+    "label": "Write a SQL query",
+    "icon": "🔍",
+    "description": "Generate SQL queries from natural language",
+    "author": { "name": "Vienna Team" },
+    "tags": ["sql", "snowflake", "bigquery", "analytics"],
+    "options": [
+      {
+        "id": "sql-analysis",
+        "label": "Analytical query from description",
+        "prompt": "Write a SQL query based on my description. Infer the likely schema from context or ask me to describe the tables. Use CTEs for readability, add comments explaining the logic, and optimize for the warehouse (Snowflake/BigQuery patterns)."
+      },
+      {
+        "id": "sql-churn",
+        "label": "Customer churn analysis",
+        "prompt": "Write a SQL query to analyze customer churn. I'll describe our data model — generate a query that identifies churned customers, calculates churn rate over time, and segments by key dimensions (plan, cohort, usage level). Include retention curves."
+      },
+      {
+        "id": "sql-funnel",
+        "label": "Conversion funnel query",
+        "prompt": "Write a SQL query for a conversion funnel analysis. I'll describe the funnel steps — generate a query that calculates: step-to-step conversion rates, overall conversion, median time between steps, and drop-off points by segment."
+      }
+    ]
+  },
+  {
+    "id": "dbt-model",
+    "label": "Generate a dbt model",
+    "icon": "🔶",
+    "description": "Create dbt models with tests and documentation",
+    "author": { "name": "Vienna Team" },
+    "tags": ["dbt", "analytics-engineering", "data-modeling"],
+    "options": [
+      {
+        "id": "dbt-model-full",
+        "label": "Model with tests and docs",
+        "prompt": "Generate a dbt model based on my description. Include: the SQL model file, a schema.yml with column descriptions and tests (not_null, unique, accepted_values, relationships), and a docs block explaining the business logic. Follow dbt best practices: staging → intermediate → marts layering."
+      },
+      {
+        "id": "dbt-staging",
+        "label": "Staging model from source",
+        "prompt": "Generate a dbt staging model for a source table I'll describe. Rename columns to snake_case, cast types appropriately, add surrogate keys if needed, and filter out test/internal data. Include the source.yml definition and basic tests."
+      },
+      {
+        "id": "dbt-incremental",
+        "label": "Incremental model",
+        "prompt": "Convert my dbt model to an incremental model. Choose the right incremental strategy (append, merge, delete+insert) based on the data characteristics I describe. Add the is_incremental() logic, unique key, and explain the backfill process."
+      }
+    ]
+  },
+  {
+    "id": "pipeline-debug",
+    "label": "Debug a pipeline failure",
+    "icon": "🔧",
+    "description": "Troubleshoot DAG and pipeline failures",
+    "author": { "name": "Vienna Team" },
+    "tags": ["airflow", "dagster", "pipelines", "debugging"],
+    "options": [
+      {
+        "id": "pipeline-dag-failure",
+        "label": "Why did this DAG fail?",
+        "prompt": "Help me debug a pipeline/DAG failure. I'll describe the error and context — walk me through: checking task logs, identifying the failing step, common causes for this type of failure, and a fix. Consider: data quality issues, schema changes, resource limits, and dependency failures."
+      },
+      {
+        "id": "pipeline-backfill",
+        "label": "Plan a safe backfill",
+        "prompt": "Help me plan a data backfill. I'll describe what needs to be reprocessed — generate a backfill plan covering: date ranges, dependency order, resource implications, idempotency checks, and a rollback strategy if something goes wrong."
+      },
+      {
+        "id": "pipeline-monitoring",
+        "label": "Add monitoring to a pipeline",
+        "prompt": "Suggest monitoring and alerting for a data pipeline I'll describe. Cover: freshness checks, row count anomalies, schema change detection, data quality assertions, and SLA tracking. Include specific alert thresholds and notification routing."
+      }
+    ]
+  },
+  {
+    "id": "data-profiling",
+    "label": "Profile a dataset",
+    "icon": "📋",
+    "description": "Data quality assessment and profiling",
+    "author": { "name": "Vienna Team" },
+    "tags": ["data-quality", "profiling", "assessment"],
+    "options": [
+      {
+        "id": "profile-full",
+        "label": "Full data quality profile",
+        "prompt": "Profile this dataset and generate a data quality report. Check: null rates per column, unique value counts, value distributions, outliers, data type consistency, and referential integrity. Flag any issues and suggest data quality tests to add."
+      },
+      {
+        "id": "profile-anomalies",
+        "label": "Find anomalies in recent data",
+        "prompt": "Check recent data for anomalies. Compare the latest load to historical patterns: volume changes, null rate spikes, new or missing values in categorical columns, and distribution shifts. Flag anything that looks like a data quality issue vs a real business change."
+      },
+      {
+        "id": "profile-schema",
+        "label": "Document table schema",
+        "prompt": "Generate documentation for a table's schema. For each column: infer the business meaning from the name and sample data, document the data type, nullability, relationships to other tables, and common query patterns. Output in a format ready for a data catalog."
+      }
+    ]
+  },
+  {
+    "id": "query-optimize",
+    "label": "Optimize a slow query",
+    "icon": "⚡",
+    "description": "SQL query optimization and performance tuning",
+    "author": { "name": "Vienna Team" },
+    "tags": ["performance", "sql", "optimization"],
+    "options": [
+      {
+        "id": "optimize-rewrite",
+        "label": "Rewrite for performance",
+        "prompt": "Optimize this slow SQL query. Analyze the query plan (if available) or infer bottlenecks from the query structure. Suggest: join reordering, predicate pushdown, CTE materialization hints, partition pruning, and index usage. Show the optimized query and explain each change."
+      },
+      {
+        "id": "optimize-explain",
+        "label": "Explain why it's slow",
+        "prompt": "Explain why this SQL query is slow. Walk me through the likely execution plan, identify the expensive operations (full table scans, cross joins, sort spills), and explain the cost in plain language. Then suggest fixes in order of impact."
+      },
+      {
+        "id": "optimize-warehouse",
+        "label": "Warehouse-specific tuning",
+        "prompt": "Optimize this query for our specific warehouse (I'll tell you which — Snowflake, BigQuery, Redshift, etc.). Apply warehouse-specific optimizations: clustering keys, materialized views, result caching, compute sizing, and cost-per-query estimates."
+      }
+    ]
+  }
+]

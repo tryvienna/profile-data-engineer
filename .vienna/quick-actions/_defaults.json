@@ -1,0 +1,4 @@
+{
+  "version": 1,
+  "defaults": ["sql-query", "dbt-model", "pipeline-debug", "data-profiling", "query-optimize"]
+}
